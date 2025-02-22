@@ -74,17 +74,21 @@
             </p>
         </section>
         
-        <section id="number-fact">
-            <h2>Number Facts</h2>
-            <p>Enter a number to get an interesting fact about it:</p>
-            <form id="number-form">
-                <input type="number" id="number-input" placeholder="Enter a number" required>
-                <button type="submit">Get Fact</button>
-            </form>
-            <div id="fact-result">
-                <!-- The fact will be displayed here -->
+        <section id="trivia">
+            <h2>Trivia Time!</h2>
+            <p>Test your knowledge with a random trivia question:</p>
+            <div id="trivia-container">
+                <div id="question-container">
+                    <!-- Question and choices will be dynamically inserted here -->
+                    <p id="question">Loading question...</p>
+                    <div id="choices">
+                        <!-- Multiple-choice options will be added here -->
+                    </div>
+                </div>
+                <p id="result"></p>
+                <p> <a href="https://opentdb.com/">Source: open trivia database</a></p>
+                <button id="next-question">Next Question</button>
             </div>
-            <p>Source: numbersapi.com</p>
         </section>
 
     </main>
@@ -97,6 +101,6 @@
         <p>&copy; 2023 Liam O'Reilly. All rights reserved.</p>
     </footer>
 
-    <script src="getFact.js"></script>
+    <script src="trivia.js"></script>
 </body>
 </html>
