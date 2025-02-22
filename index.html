@@ -3,48 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <title>My Personal Homepage</title>
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Your Name</h1>
+        <h1>Liam O'Reilly</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Work Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief introduction about yourself here.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="images/profile_pic.jpg" alt="Your Name" width="200">
+            </figure>
+            <p>I'm a software engineer with a passion for problem-solving, collaboration, and building impactful technology.
+            I love tackling complex challenges in machine learning, full-stack development, and algorithmic systems.
+            Outside of coding, I enjoy working on independent projects, watching movies, and playing soccer.</p>
+        </section>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>
-                <h3>Project Title 1</h3>
-                <p>Description of project 1.</p>
-            </li>
-            <li>
-                <h3>Project Title 2</h3>
-                <p>Description of project 2.</p>
-            </li>
-            <!-- Add more projects as needed -->
-        </ul>
-    </section>
+        <!-- Work Experience Section -->
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Zignex, Software Engineer</h3>
+                <p><time datetime="2023-01">January 2023</time> - <time datetime="2024-09">August 2024</time></p>
+            </article>
+            <article>
+                <h3>Dasion, Machine Learning Researcher</h3>
+                <p><time datetime="2022-01">January 2022</time> - <time datetime="2023-12">December 2023</time></p>
+            </article>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    </section>
+        <!-- New HTML element Section -->
+        <section id="video">
+            <h2>What I've Enjoyed Watching Recently</h2>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/B2V54HgB_2c"
+                    allow="picture-in-picture; fullscreen">
+                </iframe>
+            </div>
+            <p>This section made use of the html element iframe tag, which we have not discussed in detail. 
+                My key realization is the sheer variety of objects
+                that can be placed inside an iframe tag. Other html pages or other embedded content can itself
+                be imbedded and formatted to any specification using fairly basic css. You can also use
+                sandbox to easily control the restrictions applied to the content embedded in the iframe. 
+                The value of the attribute can use space-separated tokens to lift particular restrictions.
+                In this instance, I allowed picture-in-picture and fullscreen access for this video content.
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe">Documentation</a>
+            </p>
+            <p>
+                This section made use of the CSS property basic-shape, which allows objects to be represented as
+                    shapes by container inset, by coordinate distance, or by set dimensions, circles, ellipses, 
+                    polygons, paths, and author created shapes. I used this in conjunction with the hover effect of
+                    the video container. If you hover over the video, it will turn into a star, which I have defined as
+                    a polygon.
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/basic-shape#polygon">Documentation</a>
 
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </p>
+        </section>
+        
+        <section id="number-fact">
+            <h2>Number Facts</h2>
+            <p>Enter a number to get an interesting fact about it:</p>
+            <form id="number-form">
+                <input type="number" id="number-input" placeholder="Enter a number" required>
+                <button type="submit">Get Fact</button>
+            </form>
+            <div id="fact-result">
+                <!-- The fact will be displayed here -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:imliamoreilly@gmail.com">imliamoreilly@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/liamoreilly7">Liam O'Reilly</a></p>
+        <p>&copy; 2023 Liam O'Reilly. All rights reserved.</p>
     </footer>
 </body>
 </html>
