@@ -6,7 +6,7 @@ const factResult = document.getElementById('fact-result');
 // Fetch fact from Numbers API
 async function fetchNumberFact(number) {
     try {
-        const response = await fetch(`http://numbersapi.com/${number}?json`);
+        const response = await fetch(`https://numbersapi.com/${number}?json`);
         const data = await response.json();
         return data.text; // The fact is in the "text" property
     } catch (error) {
